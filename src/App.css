@@ -1,10 +1,11 @@
 .App {
   height: auto;
   width: 100%;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #fff;
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
 }
 
 body {
