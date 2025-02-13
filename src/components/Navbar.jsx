@@ -1,11 +1,15 @@
 import "../styles/Navbar.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import CloseIcon from "@mui/icons-material/Close";
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
+
+  const handleClick = () => {
+    setExpandNavbar(false);
+  };
 
   return (
     <nav className="navbar" id={expandNavbar ? "open" : "close"}>
@@ -20,27 +24,52 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li className="navbar-link">
-          <Link to="hero" smooth>
+          <Link
+            to="hero"
+            duration={1000}
+            smooth={"easeOutQuint"}
+            onClick={handleClick}
+          >
             Home
           </Link>
         </li>
         <li className="navbar-link">
-          <Link to="about" smooth>
+          <Link
+            to="about"
+            duration={1000}
+            smooth={"easeOutQuint"}
+            onClick={handleClick}
+          >
             About
           </Link>
         </li>
         <li className="navbar-link">
-          <Link to="skills" smooth>
+          <Link
+            to="skills"
+            duration={1000}
+            smooth={"easeOutQuint"}
+            onClick={handleClick}
+          >
             Skills
           </Link>
         </li>
         <li className="navbar-link">
-          <Link to="projects" smooth>
+          <Link
+            to="projects"
+            duration={1000}
+            smooth={"easeOutQuint"}
+            onClick={handleClick}
+          >
             Projects
           </Link>
         </li>
         <li className="navbar-link">
-          <Link to="contact" smooth>
+          <Link
+            to="contact"
+            duration={1000}
+            smooth={"easeOutQuint"}
+            onClick={handleClick}
+          >
             Contact
           </Link>
         </li>
