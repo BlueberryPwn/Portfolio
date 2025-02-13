@@ -1,24 +1,23 @@
 import "../styles/Navbar.css";
-import React from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => (
   <nav className="navbar">
     <div className="links">
-      <Link activeClass="active" smooth spy to="hero">
+      <Link to="hero" smooth>
         Home
       </Link>
-      <Link activeClass="active" smooth spy to="about">
+      <Link to="about" smooth>
         About
       </Link>
-      <Link activeClass="active" smooth spy to="skills">
+      <Link to="skills" smooth>
         Skills
       </Link>
-      <Link activeClass="active" smooth spy to="projects">
+      <Link to="projects" smooth>
         Projects
       </Link>
-      <Link activeClass="active" smooth spy to="contact">
-        Contact Me
+      <Link to="contact" smooth>
+        Contact
       </Link>
     </div>
   </nav>

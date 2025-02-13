@@ -1,5 +1,4 @@
 import "../styles/Projects.css";
-import React from "react";
 
 const Projects = () => (
   <div className="projects">
