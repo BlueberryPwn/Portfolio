@@ -1,7 +1,7 @@
 .navbar {
-  height: 3rem;
+  height: 3.5rem;
   width: 100%;
-  background-color: #0d1b2a;
+  background-color: #1b263b;
   position: fixed;
   z-index: 100;
 }
@@ -46,11 +46,11 @@
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    height: 4rem;
+    height: 5rem;
   }
 
   .navbar-toggle svg {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   #open .navbar-links {
@@ -58,10 +58,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: -0.7rem;
   }
 
   #open .navbar-link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
     padding: 1rem;
   }
