@@ -1,23 +1,9 @@
 .navbar {
   height: 3rem;
   width: 100%;
-  background: white;
-  box-shadow: 0 4px 4px -4px gray;
+  background-color: #0d1b2a;
   position: fixed;
-  top: 0;
   z-index: 100;
-}
-
-.navbar a {
-  color: black;
-  margin: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -27,10 +13,10 @@
 }
 
 .navbar-toggle button {
-  padding: 0.85rem;
+  padding: 1rem;
   background-color: transparent;
   border: none;
-  color: black;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -39,33 +25,45 @@
 }
 
 .navbar-links {
-  list-style: none;
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
+  align-items: center;
 }
 
-/* For smaller screens */
-@media only screen and (max-width: 37.49rem) {
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem;
+  transition: 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #0ef;
+}
+
+@media only screen and (max-width: 768px) {
   .navbar {
     height: 4rem;
   }
 
+  .navbar-toggle svg {
+    font-size: 3rem;
+  }
+
   #open .navbar-links {
-    padding: 0;
-    margin: 0;
-    background-color: white;
-    box-shadow: 0 4px 4px -4px gray;
+    background-color: #1b263b;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 
   #open .navbar-link {
-    width: 100%;
-    padding: 1rem 0 1rem 0;
-    border-top: solid 0.2rem whitesmoke;
-    text-align: right;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem;
   }
 
   #close .navbar-links {
@@ -73,8 +71,7 @@
   }
 }
 
-/* For bigger screens */
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 769px) {
   .navbar-toggle {
     display: none;
   }

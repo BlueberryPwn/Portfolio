@@ -1,9 +1,9 @@
 import "../styles/About.css";
 
 const About = () => (
-  <div className="about">
-    <p>This is the about me section.</p>
-  </div>
+  <section id="about">
+    <p className="about-description">This is the about me section.</p>
+  </section>
 );
 
 export default About;

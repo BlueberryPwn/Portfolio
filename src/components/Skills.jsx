@@ -1,9 +1,9 @@
 import "../styles/Skills.css";
 
 const Skills = () => (
-  <div className="skills">
-    <p>This is the skills section.</p>
-  </div>
+  <section id="skills">
+    <p className="skills-description">This is the skills section.</p>
+  </section>
 );
 
 export default Skills;

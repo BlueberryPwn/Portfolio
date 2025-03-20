@@ -1,11 +1,13 @@
 import "../styles/Footer.css";
 
 const Footer = () => (
-  <div className="footer">
-    <div className="content">
-      <p>https://blueberrypwn.github.io/</p>
+  <footer>
+    <div className="footer">
+      <a className="footer-link" href="https://blueberrypwn.github.io/">
+        https://blueberrypwn.github.io/
+      </a>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

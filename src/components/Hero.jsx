@@ -1,9 +1,9 @@
 import "../styles/Hero.css";
 
 const Hero = () => (
-  <div className="hero">
-    <p>This is the hero section.</p>
-  </div>
+  <section id="hero">
+    <p className="hero-description">This is the hero section.</p>
+  </section>
 );
 
 export default Hero;

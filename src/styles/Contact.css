@@ -1,8 +1,11 @@
-.contact {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
+.contact-description {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-description {
+    font-size: 1.5rem;
+  }
 }

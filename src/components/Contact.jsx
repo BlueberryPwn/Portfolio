@@ -1,9 +1,9 @@
 import "../styles/Contact.css";
 
 const Contact = () => (
-  <div className="contact">
-    <p>This is the contact section.</p>
-  </div>
+  <section id="contact">
+    <p className="contact-description">This is the contact section.</p>
+  </section>
 );
 
 export default Contact;

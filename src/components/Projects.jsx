@@ -1,9 +1,9 @@
 import "../styles/Projects.css";
 
 const Projects = () => (
-  <div className="projects">
-    <p>This is the projects section.</p>
-  </div>
+  <section id="projects">
+    <p className="projects-description">This is the projects section.</p>
+  </section>
 );
 
 export default Projects;
