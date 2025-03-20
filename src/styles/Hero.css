@@ -5,38 +5,38 @@
   align-items: center;
 }
 
-.hero-title {
+.hero__title {
   color: #fff;
   font-size: 5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
-.hero-description {
+.hero__description {
   color: #fff;
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
-.icon-button svg {
+.icon__button svg {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .hero-title {
+  .hero__title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
 
-  .hero-description {
+  .hero__description {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
   }
 
-  .icon-button svg {
+  .icon__button svg {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }

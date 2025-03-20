@@ -17,25 +17,25 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar" id={expandNavbar ? "open" : "close"}>
-        <div className="navbar-toggle">
+        <div className="navbar__toggle">
           <button type="button" onClick={handleMenuToggle}>
             {expandNavbar ? <CloseIcon /> : <ReorderIcon />}
           </button>
         </div>
-        <div className="navbar-links">
-          <a className="navbar-link" href="#hero" onClick={handleMenuExit}>
+        <div className="navbar__links">
+          <a className="navbar__link" href="#hero" onClick={handleMenuExit}>
             Home
           </a>
-          <a className="navbar-link" href="#about" onClick={handleMenuExit}>
+          <a className="navbar__link" href="#about" onClick={handleMenuExit}>
             About
           </a>
-          <a className="navbar-link" href="#skills" onClick={handleMenuExit}>
+          <a className="navbar__link" href="#skills" onClick={handleMenuExit}>
             Skills
           </a>
-          <a className="navbar-link" href="#projects" onClick={handleMenuExit}>
+          <a className="navbar__link" href="#projects" onClick={handleMenuExit}>
             Projects
           </a>
-          <a className="navbar-link" href="#contact" onClick={handleMenuExit}>
+          <a className="navbar__link" href="#contact" onClick={handleMenuExit}>
             Contact
           </a>
         </div>

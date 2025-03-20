@@ -1,11 +1,11 @@
-.skills-description {
+.skills__description {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
 }
 
 @media only screen and (max-width: 768px) {
-  .skills-description {
+  .skills__description {
     font-size: 1.5rem;
   }
 }

@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.footer-link {
+.footer__link {
   color: #fff;
   margin: 1rem;
   font-size: 1rem;
@@ -17,7 +17,7 @@
   transition: 0.3s;
 }
 
-.footer-link:hover {
+.footer__link:hover {
   color: #0ef;
 }
 
@@ -26,7 +26,7 @@
     height: 5rem;
   }
 
-  .footer-link {
+  .footer__link {
     font-size: 1.1rem;
   }
 }
