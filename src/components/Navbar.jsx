@@ -23,7 +23,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="navbar-links">
-          <a className="navbar-link" href="#home" onClick={closeMenu}>
+          <a className="navbar-link" href="#hero" onClick={closeMenu}>
             Home
           </a>
           <a className="navbar-link" href="#about" onClick={closeMenu}>
