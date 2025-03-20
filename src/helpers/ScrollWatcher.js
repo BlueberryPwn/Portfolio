@@ -9,21 +9,23 @@ const ScrollWatcher = () => {
 
     const handleScroll = () => {
       sections.forEach((section) => {
-        const top = window.scrollY;
-        const offset = section.offsetTop - 150;
-        const height = section.offsetHeight;
+        const scrollPosition = window.scrollY;
+        const sectionTopPosition = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
         const id = section.getAttribute("id");
 
-        // Checks if the user has scrolled past the section's top
-        // and if the user hasn't scrolled past the section's bottom
-        if (top >= offset && top < offset + height) {
+        // Checks if the user has scrolled past the section's top position
+        // and if the user hasn't scrolled past the section's bottom position
+        if (
+          scrollPosition >= sectionTopPosition &&
+          scrollPosition < sectionTopPosition + sectionHeight
+        ) {
           navLinks.forEach((link) => {
             link.classList.remove("active");
           });
 
-          // Finds the link whose href attribute contains
-          // the current section's id and matches the
-          // link with the matching section
+          // Finds the nav link matching the current section
+          // and adds the "active" class to it
           const activeLink = document.querySelector(
             `header nav a[href*="${id}"]`
           );
@@ -34,7 +36,7 @@ const ScrollWatcher = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // EventListener cleaned up on component unmount
+    // EventListener is cleaned up on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
