@@ -6,11 +6,11 @@ import ReorderIcon from "@mui/icons-material/Reorder";
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
 
-  const menuToggle = () => {
+  const handleMenuToggle = () => {
     setExpandNavbar((prev) => !prev);
   };
 
-  const closeMenu = () => {
+  const handleMenuExit = () => {
     setExpandNavbar(false);
   };
 
@@ -18,24 +18,24 @@ const Navbar = () => {
     <header>
       <nav className="navbar" id={expandNavbar ? "open" : "close"}>
         <div className="navbar-toggle">
-          <button type="button" onClick={menuToggle}>
+          <button type="button" onClick={handleMenuToggle}>
             {expandNavbar ? <CloseIcon /> : <ReorderIcon />}
           </button>
         </div>
         <div className="navbar-links">
-          <a className="navbar-link" href="#hero" onClick={closeMenu}>
+          <a className="navbar-link" href="#hero" onClick={handleMenuExit}>
             Home
           </a>
-          <a className="navbar-link" href="#about" onClick={closeMenu}>
+          <a className="navbar-link" href="#about" onClick={handleMenuExit}>
             About
           </a>
-          <a className="navbar-link" href="#skills" onClick={closeMenu}>
+          <a className="navbar-link" href="#skills" onClick={handleMenuExit}>
             Skills
           </a>
-          <a className="navbar-link" href="#projects" onClick={closeMenu}>
+          <a className="navbar-link" href="#projects" onClick={handleMenuExit}>
             Projects
           </a>
-          <a className="navbar-link" href="#contact" onClick={closeMenu}>
+          <a className="navbar-link" href="#contact" onClick={handleMenuExit}>
             Contact
           </a>
         </div>

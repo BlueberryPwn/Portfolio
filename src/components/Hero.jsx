@@ -14,7 +14,6 @@ const Hero = () => (
       >
         <GitHubIcon />
       </IconButton>
-
       <IconButton
         aria-label="visit"
         onClick={() =>

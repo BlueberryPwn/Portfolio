@@ -33,6 +33,11 @@ const ScrollWatcher = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // EventListener cleaned up on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 };
 
