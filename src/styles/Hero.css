@@ -6,38 +6,94 @@
 }
 
 .hero__title {
-  color: #fff;
+  color: #fffaff;
   font-size: 5rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 .hero__description {
-  color: #fff;
+  color: #fffaff;
   font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  text-align: center;
 }
 
-.icon__button svg {
-  color: #fff;
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.hero__socials__item {
+  color: #fffaff;
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.hero__socials__item:hover {
+  transform: scale(1.1);
+}
+
+.hero__shortcut {
+  background-color: #fffaff;
+  color: #1e1b18;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.1s;
+}
+
+.hero__shortcut:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 768px) {
   .hero__title {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 4rem;
   }
 
   .hero__description {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
 
-  .icon__button svg {
+  .hero__socials__item {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .hero__shortcut {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__description {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .hero__socials__item {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .hero__shortcut {
+    padding: 1rem 1rem;
   }
 }

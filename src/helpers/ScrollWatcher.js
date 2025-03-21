@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-// Watches the scroll position and adjusts the
-// current active link depending on the visible section
+// Watches the scroll position and adjusts the current
+// active link depending on the visible section
 const ScrollWatcher = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -24,8 +24,8 @@ const ScrollWatcher = () => {
             link.classList.remove("active");
           });
 
-          // Finds the nav link matching the current section
-          // and adds the "active" class to it
+          // Finds the nav link matching the current
+          // section and adds the "active" class to it
           const activeLink = document.querySelector(
             `header nav a[href*="${id}"]`
           );

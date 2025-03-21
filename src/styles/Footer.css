@@ -1,15 +1,13 @@
 .footer {
-  height: 3.5rem;
+  background-color: #fffaff;
   width: 100%;
-  background-color: #1b263b;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer__link {
-  color: #fff;
+  color: #1e1b18;
   margin: 1rem;
   font-size: 1rem;
   font-weight: 500;
@@ -18,15 +16,5 @@
 }
 
 .footer__link:hover {
-  color: #0ef;
-}
-
-@media only screen and (max-width: 768px) {
-  .footer {
-    height: 5rem;
-  }
-
-  .footer__link {
-    font-size: 1.1rem;
-  }
+  color: #d8315b;
 }

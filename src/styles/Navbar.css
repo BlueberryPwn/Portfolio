@@ -1,9 +1,8 @@
 .navbar {
-  height: 3.5rem;
-  width: 100%;
-  background-color: #1b263b;
+  background-color: #fffaff;
   position: fixed;
-  z-index: 100;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar__toggle {
@@ -16,7 +15,7 @@
   padding: 1rem;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #1e1b18;
   cursor: pointer;
 }
 
@@ -28,10 +27,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0.2rem;
 }
 
 .navbar__link {
-  color: #fff;
+  color: #1e1b18;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -41,30 +41,29 @@
 
 .navbar__link:hover,
 .navbar__link.active {
-  color: #0ef;
+  color: #d8315b;
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar {
-    height: 5rem;
-  }
-
   .navbar__toggle svg {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #open .navbar__links {
-    background-color: #1b263b;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: -0.7rem;
+    background-color: #fffaff;
+    padding: 0;
   }
 
   #open .navbar__link {
-    font-size: 1.25rem;
+    border-top: 1px solid #ffebff;
+    font-size: 1.5rem;
+    text-align: right;
     margin: 0;
     padding: 1rem;
+    width: 100%;
   }
 
   #close .navbar__links {

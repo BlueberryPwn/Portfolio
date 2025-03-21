@@ -1,29 +1,32 @@
 import "../styles/Hero.css";
-import IconButton from "@mui/material/IconButton";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import React from "react";
+import HeroItem from "./HeroItem";
+import { SocialsList } from "../helpers/SocialsList";
 
-const Hero = () => (
-  <section id="hero">
-    <h2 className="hero__title">Hi, my name is Nshoan.</h2>
-    <p className="hero__description">I am a fullstack developer.</p>
-    <div className="icon__button">
-      <IconButton
-        aria-label="visit"
-        onClick={() => window.open("https://github.com/BlueberryPwn")}
-      >
-        <GitHubIcon />
-      </IconButton>
-      <IconButton
-        aria-label="visit"
-        onClick={() =>
-          window.open("https://www.linkedin.com/in/nshoan-a-853878208/")
-        }
-      >
-        <LinkedInIcon />
-      </IconButton>
-    </div>
-  </section>
-);
+const Hero = () => {
+  return (
+    <section id="hero">
+      <h1 className="hero__title">Hi, I'm Nshoan.</h1>
+      <h2 className="hero__description">
+        Fullstack developer with a passion for all things technology
+      </h2>
+      <div className="hero__socials">
+        {SocialsList.map((item) => {
+          return (
+            <HeroItem
+              key={item.id}
+              image={item.image}
+              alt={item.alt}
+              link={item.link}
+            />
+          );
+        })}
+      </div>
+      <a className="hero__shortcut" href="#projects">
+        Projects
+      </a>
+    </section>
+  );
+};
 
 export default Hero;

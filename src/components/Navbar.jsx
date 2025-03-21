@@ -18,7 +18,11 @@ const Navbar = () => {
     <header>
       <nav className="navbar" id={expandNavbar ? "open" : "close"}>
         <div className="navbar__toggle">
-          <button type="button" onClick={handleMenuToggle}>
+          <button
+            type="button"
+            aria-label="Menu button."
+            onClick={handleMenuToggle}
+          >
             {expandNavbar ? <CloseIcon /> : <ReorderIcon />}
           </button>
         </div>
@@ -28,9 +32,6 @@ const Navbar = () => {
           </a>
           <a className="navbar__link" href="#about" onClick={handleMenuExit}>
             About
-          </a>
-          <a className="navbar__link" href="#skills" onClick={handleMenuExit}>
-            Skills
           </a>
           <a className="navbar__link" href="#projects" onClick={handleMenuExit}>
             Projects

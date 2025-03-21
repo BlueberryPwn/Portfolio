@@ -1,5 +1,5 @@
 .App {
-  background-color: #0d1b2a;
+  background-color: #3e92cc;
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1;
 }
@@ -10,9 +10,8 @@ html {
 
 section {
   min-height: 100vh;
-  background-color: #0d1b2a;
 }
 
 section:nth-child(odd) {
-  background-color: #1b263b;
+  background-color: #0a2463;
 }
