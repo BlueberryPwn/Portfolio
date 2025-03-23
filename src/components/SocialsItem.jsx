@@ -1,14 +1,14 @@
-import "../styles/Hero.css";
+import "../styles/Socials.css";
 import React from "react";
 
-const HeroItem = ({ image, alt, link }) => {
+const SocialsItem = ({ image, alt, link }) => {
   const handleLink = () => {
     window.open(link);
   };
 
   return (
     <img
-      className="hero__socials__item"
+      className="socials__item"
       onClick={handleLink}
       src={image}
       alt={alt}
@@ -16,4 +16,4 @@ const HeroItem = ({ image, alt, link }) => {
   );
 };
 
-export default HeroItem;
+export default SocialsItem;

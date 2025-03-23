@@ -7,53 +7,36 @@
 
 .hero__title {
   color: #fffaff;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
-  margin: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
 .hero__description {
   color: #fffaff;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
-  margin: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
-}
-
-.hero__socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-}
-
-.hero__socials__item {
-  color: #fffaff;
-  height: 4rem;
-  width: 4rem;
-  margin: 1rem;
-  cursor: pointer;
-  transition: transform 0.1s;
-}
-
-.hero__socials__item:hover {
-  transform: scale(1.1);
 }
 
 .hero__shortcut {
   background-color: #fffaff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   color: #1e1b18;
   border: none;
-  border-radius: 1rem;
-  font-size: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
   font-weight: 500;
-  padding: 1rem 2rem;
-  margin: 1rem;
+  padding: 1rem 3rem;
+  margin: 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  transition: transform 0.1s;
+  transition: transform 0.2s;
 }
 
 .hero__shortcut:hover {
@@ -62,20 +45,15 @@
 
 @media only screen and (max-width: 768px) {
   .hero__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .hero__description {
-    font-size: 2rem;
-  }
-
-  .hero__socials__item {
-    height: 3.5rem;
-    width: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .hero__shortcut {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2.5rem;
   }
 }
 
@@ -85,15 +63,10 @@
   }
 
   .hero__description {
-    font-size: 1.5rem;
-  }
-
-  .hero__socials__item {
-    height: 3rem;
-    width: 3rem;
+    font-size: 2rem;
   }
 
   .hero__shortcut {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 }

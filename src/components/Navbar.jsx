@@ -15,33 +15,31 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <nav className="navbar" id={expandNavbar ? "open" : "close"}>
-        <div className="navbar__toggle">
-          <button
-            type="button"
-            aria-label="Menu button."
-            onClick={handleMenuToggle}
-          >
-            {expandNavbar ? <CloseIcon /> : <ReorderIcon />}
-          </button>
-        </div>
-        <div className="navbar__links">
-          <a className="navbar__link" href="#hero" onClick={handleMenuExit}>
-            Home
-          </a>
-          <a className="navbar__link" href="#about" onClick={handleMenuExit}>
-            About
-          </a>
-          <a className="navbar__link" href="#projects" onClick={handleMenuExit}>
-            Projects
-          </a>
-          <a className="navbar__link" href="#contact" onClick={handleMenuExit}>
-            Contact
-          </a>
-        </div>
-      </nav>
-    </header>
+    <nav className="navbar" id={expandNavbar ? "open" : "close"}>
+      <div className="navbar__toggle">
+        <button
+          type="button"
+          aria-label="Menu button."
+          onClick={handleMenuToggle}
+        >
+          {expandNavbar ? <CloseIcon /> : <ReorderIcon />}
+        </button>
+      </div>
+      <div className="navbar__links">
+        <a className="navbar__link" href="#hero" onClick={handleMenuExit}>
+          Home
+        </a>
+        <a className="navbar__link" href="#about" onClick={handleMenuExit}>
+          About
+        </a>
+        <a className="navbar__link" href="#projects" onClick={handleMenuExit}>
+          Projects
+        </a>
+        <a className="navbar__link" href="#contact" onClick={handleMenuExit}>
+          Contact
+        </a>
+      </div>
+    </nav>
   );
 };
 

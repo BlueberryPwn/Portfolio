@@ -1,0 +1,14 @@
+.socials__item {
+  color: #fffaff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.socials__item:hover {
+  transform: scale(1.2);
+}

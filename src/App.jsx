@@ -7,7 +7,7 @@ import ScrollWatcher from "./helpers/ScrollWatcher";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <ScrollWatcher />
       <Router>
         <Navbar />

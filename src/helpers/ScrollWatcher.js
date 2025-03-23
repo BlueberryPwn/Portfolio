@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-// Watches the scroll position and adjusts the current
-// active link depending on the visible section
+// Monitors the scroll position and dynamically updates the "active" class
+// on navigation links to match the currently visible section
 const ScrollWatcher = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("header nav a");
+    const navLinks = document.querySelectorAll("nav a");
 
     const handleScroll = () => {
       sections.forEach((section) => {
@@ -14,8 +14,8 @@ const ScrollWatcher = () => {
         const sectionHeight = section.offsetHeight;
         const id = section.getAttribute("id");
 
-        // Checks if the user has scrolled past the section's top position
-        // and if the user hasn't scrolled past the section's bottom position
+        // Determines whether the scroll position is within the currently visible section
+        // If true, removes the "active" class from all navigation links
         if (
           scrollPosition >= sectionTopPosition &&
           scrollPosition < sectionTopPosition + sectionHeight
@@ -24,11 +24,9 @@ const ScrollWatcher = () => {
             link.classList.remove("active");
           });
 
-          // Finds the nav link matching the current
-          // section and adds the "active" class to it
-          const activeLink = document.querySelector(
-            `header nav a[href*="${id}"]`
-          );
+          // Selects the first nav link whose href attribute contains the current section ID
+          // If true, applies the "active" class to the nav link if a match is found
+          const activeLink = document.querySelector(`nav a[href*="${id}"]`);
           if (activeLink) activeLink.classList.add("active");
         }
       });
